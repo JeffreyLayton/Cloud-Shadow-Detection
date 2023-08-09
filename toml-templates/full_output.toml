@@ -1,0 +1,15 @@
+# We can put the data and output sections into one toml
+[Output]
+# By specifying a valid .tif path, these output will be produced
+CM_path = "path\\filename.tif"
+PSM_path = "path\\filename.tif"
+OSM_path = "path\\filename.tif"
+FSM_path = "path\\filename.tif"
+Alpha_path = "path\\filename.tif"
+Beta_path = "path\\filename.tif"
+PSME_path = "path\\filename.tif"
+OSME_path = "path\\filename.tif"
+FSME_path = "path\\filename.tif"
+# By specifying a valid .json path, the output will be produced
+EvaluationMetric_path = "path\\filename.json"
+HeightVariationMetric_path = "path\\filename.json"

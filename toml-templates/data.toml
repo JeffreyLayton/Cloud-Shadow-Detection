@@ -1,0 +1,19 @@
+# We can put the data and output sections into one toml
+[Data]
+# ID to print out with the results to identify the source
+ID = "ID VALUE"
+# Must be 4 flouating point numbers long and in the format of:
+#      [Min-Long, Min-Lat, Max-Long, Max-Lat]
+bbox = [0, 0, 1, 1]
+# These paths are required and must be ".tif"
+NIR_path = "path\\filename.tif"
+CLP_path = "path\\filename.tif"
+CLD_path = "path\\filename.tif"
+ViewZenith_path = "path\\filename.tif"
+ViewAzimuth_path = "path\\filename.tif"
+SunZenith_path = "path\\filename.tif"
+SunAzimuth_path = "path\\filename.tif"
+SCL_path = "path\\filename.tif"
+RBGA_path = "path\\filename.tif"
+# These paths are optional and must be ".tif"
+ShadowBaseline_path = "path\\shadowBaseline.tif"

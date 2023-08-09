@@ -1,0 +1,173 @@
+{
+  "version": 2,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 22,
+    "patch": 0
+  },
+  "configurePresets": [
+    {
+      "name": "dev-common",
+      "hidden": true,
+      "inherits": [
+        "dev-mode",
+        "conan"
+      ],
+      "cacheVariables": {
+        "BUILD_MCSS_DOCS": "ON"
+      }
+    },
+    {
+      "name": "dev-linux",
+      "binaryDir": "${sourceDir}/build/dev-linux",
+      "inherits": [
+        "dev-common",
+        "ci-linux"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "dev-fsanitize",
+      "binaryDir": "${sourceDir}/build/fsanitize",
+      "inherits": [
+        "dev-linux"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Sanitize",
+        "CMAKE_CXX_FLAGS_SANITIZE": "-O2 -g -fsanitize=address,undefined -fno-omit-frame-pointer -fno-common",
+        "CMAKE_MAP_IMPORTED_CONFIG_SANITIZE": "Sanitize;RelWithDebInfo;Release;Debug;"
+      }
+    },
+    {
+      "name": "deb-linux",
+      "binaryDir": "${sourceDir}/build/deb-linux",
+      "inherits": [
+        "dev-common",
+        "ci-linux"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Debug",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "rel-linux",
+      "binaryDir": "${sourceDir}/build/rel-linux",
+      "inherits": [
+        "dev-common",
+        "ci-linux"
+      ],
+      "cacheVariables": {
+        "CMAKE_BUILD_TYPE": "Release",
+        "CMAKE_EXPORT_COMPILE_COMMANDS": "ON"
+      }
+    },
+    {
+      "name": "dev-win64",
+      "binaryDir": "${sourceDir}/build/dev-win64",
+      "inherits": [
+        "dev-common",
+        "ci-win64"
+      ]
+    },
+    {
+      "name": "dev",
+      "binaryDir": "${sourceDir}/build/dev",
+      "inherits": "dev-linux"
+    },
+    {
+      "name": "prof",
+      "binaryDir": "${sourceDir}/build/prof",
+      "inherits": "dev-linux",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "-fno-omit-frame-pointer"
+
+      }
+    },
+    {
+      "name": "dev-coverage",
+      "binaryDir": "${sourceDir}/build/coverage",
+      "inherits": [
+        "dev-mode",
+        "coverage-linux",
+        "conan"
+      ]
+    }
+  ],
+  "buildPresets": [
+    {
+      "name": "dev-fsanitize",
+      "configurePreset": "dev-fsanitize",
+      "configuration": "RelWithDebInfo",
+      "jobs": 20
+    },
+    {
+      "name": "dev-win64",
+      "configurePreset": "dev-win64",
+      "configuration": "RelWithDebInfo",
+      "jobs": 20
+    },
+    {
+      "name": "dev",
+      "configurePreset": "dev",
+      "configuration": "RelWithDebInfo",
+      "jobs": 20
+    },
+    {
+      "name": "deb-linux",
+      "configurePreset": "deb-linux",
+      "configuration": "Debug",
+      "jobs": 20
+    },
+    {
+      "name": "rel-linux",
+      "configurePreset": "rel-linux",
+      "configuration": "Release",
+      "jobs": 20
+    },
+    {
+      "name": "prof",
+      "configurePreset": "prof",
+      "configuration": "RelWithDebInfo",
+      "jobs": 20
+    }
+  ],
+  "testPresets": [
+    {
+      "name": "dev",
+      "configurePreset": "dev",
+      "configuration": "RelWithDebInfo",
+      "output": {
+        "outputOnFailure": true
+      },
+      "execution": {
+        "jobs": 20
+      }
+    },
+    {
+      "name": "deb-linux",
+      "configurePreset": "deb-linux",
+      "configuration": "Debug",
+      "output": {
+        "outputOnFailure": true
+      },
+      "execution": {
+        "jobs": 20
+      }
+    },
+    {
+      "name": "rel-linux",
+      "configurePreset": "rel-linux",
+      "configuration": "Release",
+      "output": {
+        "outputOnFailure": true
+      },
+      "execution": {
+        "jobs": 20
+      }
+    }
+  ]
+}

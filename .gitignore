@@ -1,0 +1,15 @@
+.idea/
+.vs/
+.vscode/
+build/
+cmake-build-*/
+prefix/
+**/.DS_Store
+CMakeLists.txt.user
+conanbuildinfo.cmake
+conanbuildinfo.txt
+conan.lock
+graph_info.json
+poetry.lock
+conan/*
+bindings/*

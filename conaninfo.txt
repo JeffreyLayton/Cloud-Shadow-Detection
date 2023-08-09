@@ -1,0 +1,168 @@
+[settings]
+    arch=x86_64
+    build_type=RelWithDebInfo
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MD
+    compiler.version=17
+    os=Windows
+
+[requires]
+    boost/1.Y.Z
+    eigen/3.Y.Z
+    fmt/10.Y.Z
+    glad/0.1.36
+    glfw/3.Y.Z
+    glm/cci.20230113
+    imgui/1.Y.Z
+    libtiff/4.Y.Z
+    lyra/1.Y.Z
+    nlohmann_json/3.Y.Z
+    opencl-headers/2023.Y.Z
+    opencl-icd-loader/2023.Y.Z
+    opengl/system
+    tomlplusplus/3.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=x86_64
+    build_type=RelWithDebInfo
+    compiler=Visual Studio
+    compiler.cppstd=20
+    compiler.runtime=MD
+    compiler.version=17
+    os=Windows
+
+[full_requires]
+    boost/1.82.0:5a717f2cd05d8a9e3b6ba3881c03266007feb5ec
+    eigen/3.4.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    fmt/10.0.0:7cbe6b16aa793d30c3563e92d18a88a2f988699c
+    glad/0.1.36:01685c0875cc856c2ff736f83e7a560ce64c6168
+    glfw/3.3.8:66d2c625bcd2140499f6004f3f4f71b2b2d12ce2
+    glm/cci.20230113:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    imgui/1.81:6a90b2f7af5e142a729cf557ec02843320fef010
+    jbig/20160605:a4e1afe0cdf28a6e8a24a99bcef32c1d8b1b1ea6
+    libdeflate/1.18:270dc4a2f77a5fc63ad24b950295fddb3a32f993
+    libjpeg/9e:270dc4a2f77a5fc63ad24b950295fddb3a32f993
+    libtiff/4.5.0:a188fb819690015d3b2a878993f736be16df62e4
+    libwebp/1.3.1:35e93cf1a4892e74ea68e04ae6584a6768f1a24a
+    lyra/1.6.1:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    nlohmann_json/3.11.2:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    opencl-headers/2023.04.17:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    opencl-icd-loader/2023.04.17:ffc078d2d05bcc6f2acfaca3303b93a8ac148178
+    opengl/system:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    tomlplusplus/3.3.0:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    xz_utils/5.4.2:270dc4a2f77a5fc63ad24b950295fddb3a32f993
+    zlib/1.2.13:270dc4a2f77a5fc63ad24b950295fddb3a32f993
+    zstd/1.5.5:bb7459059ccb263b17051f13766d8a54c12f6b46
+
+[full_options]
+    boost:asio_no_deprecated=False
+    boost:buildid=None
+    boost:bzip2=True
+    boost:debug_level=0
+    boost:diagnostic_definitions=False
+    boost:error_code_header_only=False
+    boost:extra_b2_flags=None
+    boost:filesystem_no_deprecated=False
+    boost:filesystem_use_std_fs=False
+    boost:filesystem_version=None
+    boost:header_only=False
+    boost:i18n_backend=deprecated
+    boost:layout=system
+    boost:lzma=False
+    boost:magic_autolink=False
+    boost:multithreading=True
+    boost:namespace=boost
+    boost:namespace_alias=False
+    boost:numa=True
+    boost:pch=True
+    boost:python_executable=None
+    boost:python_version=None
+    boost:segmented_stacks=False
+    boost:shared=False
+    boost:system_no_deprecated=False
+    boost:system_use_utf8=False
+    boost:visibility=hidden
+    boost:without_atomic=False
+    boost:without_chrono=False
+    boost:without_container=False
+    boost:without_context=False
+    boost:without_contract=False
+    boost:without_coroutine=True
+    boost:without_date_time=False
+    boost:without_exception=False
+    boost:without_fiber=False
+    boost:without_filesystem=False
+    boost:without_graph=True
+    boost:without_graph_parallel=True
+    boost:without_iostreams=True
+    boost:without_json=False
+    boost:without_locale=True
+    boost:without_log=True
+    boost:without_math=True
+    boost:without_mpi=True
+    boost:without_nowide=False
+    boost:without_program_options=True
+    boost:without_python=True
+    boost:without_random=True
+    boost:without_regex=True
+    boost:without_serialization=True
+    boost:without_stacktrace=False
+    boost:without_system=False
+    boost:without_test=True
+    boost:without_thread=False
+    boost:without_timer=True
+    boost:without_type_erasure=True
+    boost:without_url=False
+    boost:without_wave=True
+    boost:zlib=True
+    boost:zstd=False
+    eigen:MPL2_only=False
+    fmt:header_only=False
+    fmt:shared=False
+    fmt:with_fmt_alias=False
+    fmt:with_os_api=True
+    glad:extensions=
+    glad:gl_profile=core
+    glad:gl_version=4.6
+    glad:gles1_version=None
+    glad:gles2_version=None
+    glad:glsc2_version=None
+    glad:no_loader=False
+    glad:shared=False
+    glad:spec=gl
+    glfw:shared=False
+    glfw:vulkan_static=False
+    imgui:shared=False
+    jbig:build_executables=True
+    jbig:shared=False
+    libdeflate:shared=False
+    libjpeg:shared=False
+    libtiff:cxx=True
+    libtiff:jbig=True
+    libtiff:jpeg=libjpeg
+    libtiff:libdeflate=True
+    libtiff:lzma=True
+    libtiff:shared=False
+    libtiff:webp=True
+    libtiff:zlib=True
+    libtiff:zstd=True
+    libwebp:near_lossless=True
+    libwebp:shared=False
+    libwebp:swap_16bit_csp=False
+    libwebp:with_simd=True
+    opencl-icd-loader:disable_openclon12=False
+    opencl-icd-loader:shared=False
+    xz_utils:shared=False
+    zlib:shared=False
+    zstd:shared=False
+    zstd:threading=True
+
+[recipe_hash]
+
+
+[env]
+
