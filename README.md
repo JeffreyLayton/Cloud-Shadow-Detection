@@ -1,4 +1,5 @@
-# Cloud Shadow Detection Over Canadian Farmland via Ray-casting with Probability Analysis Refinement using Sentinal-2 Satellite Data
+# [Cloud Shadow Detection Over Canadian Farmland via Ray-casting with Probability Analysis Refinement using Sentinal-2 Satellite Data](https://www.mdpi.com/2072-4292/15/16/3955)
+Published in Atmospheric Remote Sensing, 2023.
 
 by
 Jeffrey Layton (jeffrey.layton@ucalgary.ca),
