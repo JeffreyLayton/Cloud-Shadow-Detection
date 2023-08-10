@@ -6,7 +6,7 @@ Lakin Wecker,
 Dr. Adam Runions,
 Dr. Faramarz Samavati
 
-![](ExampleOutput.png)
+![](Graphical_Abstract.png)
 
 ## Abstract
 
