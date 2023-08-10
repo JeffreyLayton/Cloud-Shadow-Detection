@@ -84,7 +84,7 @@ conan install . -s build_type=RelWithDebInfo -b outdated --update -pr:b=shadow_d
 ```
 
 To build the code, open the repo in Visual Studio 2022, configure the project using the CMakeLists.txt, and build using the appropriate dev configureation (dev-win64 is recommended).
-Alternativly, you can build the code from the command line by using the following commands in the build directory (with your approprate build paths):
+Alternatively, you can build the code from the command line by using the following commands in the build directory (with your approprate build paths):
 
 ```
 cmake --preset=dev-win64
