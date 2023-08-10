@@ -8,21 +8,6 @@ Dr. Faramarz Samavati
 
 ![](Graphical_Abstract.png)
 
-## Abstract
-
-Analysis of aerial images provided by satellites enables continuous monitoring and is a central component of many applications including precision farming.
-Nonetheless, this analysis is often impeded by the presence of clouds and cloud shadows, which obscure the underlying region of
-interest and introduce incorrect values that bias analysis. In this paper, we outline a method for cloud shadow detection,
-and demonstrate our method using Canadian farmland data obtained from the Sentinel-2 Satellite. Our approach builds on other
-object-based cloud and cloud shadow detection methods that generate preliminary shadow candidate masks which are refined by
-matching clouds to their respective shadows. We improve on these components by using ray-casting and inverse texture mapping
-methods to quickly identify cloud shadows, allowing for the immediate removal of false positives during image processing.
-Leveraging our ray-casting based approach, we further improve our results by implementing a probability analysis based on the
-cloud probability layer provided by the Sentinel-2 satellite to account for missed shadow pixels. Evaluation of our method using
-the average producers (82.82\%) and users accuracy (75.55\%) both show a marked improvement over the performance of other
-object-based methods. Methodologically, our work demonstrates how incorporating probability analysis as a post-processing step can
-improve the generation of shadow masks.
-
 ## Software implementation
 
 This software is an implementation of our cloud shadow detection system.
